@@ -5,18 +5,25 @@
 <!--Font Awesome-->
 <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="top-nav-bar">
 <div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openMenu()"></i>
+    <i class="fa fa-times"id="close-btn" onclick="closeMenu()"></i>
+
+
+
+
 <!--logo goes here-->    
 <img class="logo" src="images/logo-sm.jpg">
 <input type=text class="form-control">    
 <!--search box creared here - may not want in final-->
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 </div>
+<!--menu bar created here-->
 <div class="menu-bar">
     <ul>
         <li><a href="#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
@@ -24,9 +31,54 @@
         <li><a href="#">Log In</a></li>
     </ul>
 </div>
-
-
 </div>
+
+
+<section class="header">
+    <div class="side-menu" id="side-menu">
+        <ul>
+            <li>Wine<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Napa Valley</li>
+                </ul>
+            </li>
+            <li>Sports<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Cardinals</li>
+                </ul>
+            </li>    
+            <li>News<i class="fa fa-angle-right"></i>
+            </li>    
+        </ul>
+    </div>
+</section>
+
+
+
+
+<script>
+    function openMenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("menu-btn").style.display="none";
+        document.getElementById("close-btn").style.display="block";
+    }
+    function closeMenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("menu-btn").style.display="block";
+        document.getElementById("close-btn").style.display="none";
+    }
+
+</script>
+
+
+
+  
+
+
+
+
 </body>    
 </html>
 
