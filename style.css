@@ -8,6 +8,8 @@ body
     background-color: #f1f3f4;
     font-family: sans-serif
 }
+
+/*-------------------------------------------------Top Menu------------------------*/
 .top-nav-bar
 {
     height: 57px;
@@ -120,15 +122,15 @@ body
     }
 
 }
-/*side menu*/
+/*---------------------side menu--------------------------*/
 .side-menu
 {
     height: 79%;
     width: 15%;
-    font-size: 14px;
+    font-size: 16px;
     float: left;
     z-index: 2;
-    /* background-color: #ddd; */
+    background-color: #ddd; 
 }
 .side-menu ul
 {
@@ -208,4 +210,28 @@ body
      
 }
 
+/*---------------slider css----------------*/
+.slider
+{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+.carousel
+{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators
+{
+    z-index: 1 !important;
+}
 
+/* slider responsive */
+@media only screen and (max-width:980px)
+{
+    .slider
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+}
