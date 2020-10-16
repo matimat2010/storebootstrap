@@ -125,12 +125,13 @@ body
 /*---------------------side menu--------------------------*/
 .side-menu
 {
-    height: 65%;
+    height: 40%;
     width: 15%;
-    font-size: 16px;
+    margin-left: 5px;
+    font-size: 18px;
     float: left;
     z-index: 2;
-    background-color: #ddd; 
+    background-color: #fff; 
 }
 .side-menu ul
 {
@@ -164,8 +165,8 @@ body
     margin-left: 14%;
     padding: 0 100px 10px 10px;
     position: fixed;
-    color: white;
-    background: hsl(162, 84%, 58%);
+    color: black;
+    background: white;
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5)
 }
 .fa-angle-right
@@ -217,10 +218,13 @@ body
     margin-left: 15%;
     padding: 0 10px;
 }
+/*---------include for drop shadow around image sliders
 .carousel
 {
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
 }
+*/
+
 .carousel-indicators
 {
     z-index: 1 !important;
