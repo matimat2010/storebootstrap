@@ -17,7 +17,7 @@ body
         position: sticky;
         background: #fff;
         margin-bottom: 20px;
-        border-bottom: 3px solid orange;
+        border-bottom: 3px solid hsl(162, 84%, 58%);
         z-index: 2;
 }
 .logo
@@ -31,7 +31,7 @@ body
 {
     margin-top: 9px;
     margin-left: 30px;
-    border: 1px solid orange !important;
+    border: 1px solid hsl(162, 84%, 58%) !important;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0 !important;
@@ -41,8 +41,8 @@ body
 /*search form*/
 .input-group-text
 {
-    background: orange !important;
-    border: 1px solid orange !important;
+    background: hsl(162, 84%, 58%) !important;
+    border: 1px solid hsl(162, 84%, 58%) !important;
     margin: 8.5px 10px 3px 0 !important;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
@@ -80,7 +80,7 @@ body
     list-style-type: none;
     padding: 15px 35px;
     text-align: center;
-    background-color: orange;
+    background-color: hsl(162, 84%, 58%);
     cursor: pointer;
 }
 .menu-bar ul li a
@@ -255,7 +255,7 @@ body
 /*----------2nd row "on sale"-------------------*/
 .title-box 
 {
-background: orange;
+background: hsl(162, 84%, 58%);
 color: #fff;
 width: 180px;
 padding: 4px 10px;
@@ -270,7 +270,7 @@ display: flex;
 .title-box::after
 {
     content: '';
-    border-top: 40px solid orange;
+    border-top: 40px solid hsl(162, 84%, 58%);
     border-right: 50px solid transparent;
     position: absolute;
     display: flex;
@@ -320,7 +320,7 @@ display: flex;
 /*---Product Bottom---text below images in 2nd row----------------------*/
 .product-bottom .fa 
 {
-    color: orange;
+    color: hsl(162, 84%, 58%);
     font-size: 10px;
 }
 .product-bottom h3
@@ -398,4 +398,66 @@ display: flex;
 {
     padding-right: 20px;
     font-size:15px;
+}
+
+/*--------Product Details-------*/
+.single-product
+{
+    margin-top: 70px;
+}
+.new-arrival
+{
+    background: hsl(162, 84%, 58%);
+    width: 50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px; 
+}
+.col-md-7 h2
+{
+    color: #555;
+}
+.single-product .fa
+{
+    color: hsl(162, 84%, 58%);
+}
+.single-product .price
+{
+    color: #555;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.single-product input
+{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+}
+/*--------------------Purchase Button Styling-------*/
+.single-product .btn-primary
+{
+    background: hsl(162, 84%, 58%) !important;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none !important;
+}
+/*-------------------Product Description Paragraph------*/
+.product-description h6
+{
+    margin-top: 50px;
+    color: hsl(162, 84%, 58%);
+}
+.product-description p
+{
+    margin-top: 30px;
+}
+.product-description hr
+{
+    margin-bottom: 50px;
 }
